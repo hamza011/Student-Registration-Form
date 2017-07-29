@@ -16,10 +16,25 @@ export class StudentInfoService {
     }
     getRegistered(e, fullName:string, email:string, age:number){
         e.preventDefault();
-        this.students.push( new StudentInfo(fullName, email, age));  
+        this.students.push( new StudentInfo(fullName, email, age)); 
+        
     }
+
     delete(i){
-        console.log('i',i);
         this.students.splice(i, 1);
     }
+
+    edit(students,i,fullName,email,age){
+        fullName.value = students.fullName;
+        email.value = students.email;
+        age.value = students.age;
+        console.log('Calling update inside edit',this.update)
+    }
+
+    update(students, i, fullName, email, age){
+        this.students[i].fullName = fullName.value;
+        this.students[i].email = email.value;
+        this.students[i].age = age.value
+    }
+
 }

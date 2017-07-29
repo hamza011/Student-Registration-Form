@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 // // Angular Forms
 // import { ReactiveFormsModule } from '@angular/forms';
@@ -18,6 +20,7 @@ import { StudentInfoService } from './student-info.service';
   ],
   imports: [
     BrowserModule, 
+    BrowserAnimationsModule
     // ReactiveFormsModule,
     // HttpModule
   ],

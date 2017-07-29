@@ -17,7 +17,6 @@ export class StudentInfoService {
     getRegistered(e, fullName:string, email:string, age:number){
         e.preventDefault();
         this.students.push( new StudentInfo(fullName, email, age)); 
-        
     }
 
     delete(i){

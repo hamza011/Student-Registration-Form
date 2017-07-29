@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+ import { Component } from '@angular/core';
 import { NgModel } from '@angular/forms';
 
 import { StudentInfoService } from './student-info.service'
